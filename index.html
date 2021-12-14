@@ -3,57 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width">
-        <title>Document Template</title>
-        <!-- For External CSS files
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>-->
-        <!-- For Internal CSS in HTML -->
-        <style>
-            /* Testing CSS natively */
-            * {
-                outline: 0;
-                padding: 0;
-                margin: 0;
-                border: 0;
-            }
-        </style>
+        <title>Dojonary</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     </head>
     <body>
         <header>
             <h1>Dojonary</h1>
             <input type="search" name="Search">
-            <button>Login</button>
+            <button id="user_status">Login</button>
         </header>
-        <div>
-            <div>
-                <div>
+        <div id="left_block">
+            <div class="block">
+                <div class="word_data">
                     <h1>ninja</h1>
-                    <p>noun</p>
-                    <p>Plural: <span>ninjas</span></p>
-                    <button><span>0</span> likes</button>
+                    <h3>noun</h3>
+                    <p>Plural: <span class="em">ninjas</span></p>
+                    <button class="likes"><span>0</span> likes</button>
                 </div>
-                <div>
+                <div class="info">
                     <p>
-                        A practiciner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+                        A practitioner skilled in the <a href="#">Japanese</a> art 
+                        of <a href="#">ninjutsu</a>
                     </p>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="block">
+                <div class="word_data">
                     <h1>ninja</h1>
-                    <p>noun</p>
-                    <p>Plural: <span>ninjas</span></p>
-                    <button><span>0</span> likes</button>
+                    <h3>noun</h3>
+                    <p>Plural: <span class="em">ninjas</span></p>
+                    <button class="likes"><span>0</span> likes</button>
                 </div>
-                <div>
+                <div class="info">
                     <p>
-                        A <a href="#">Programmer</a> who breaks down problems with <a href="#">zen</a>-like focus
+                        A <a href="#">Programmer</a> who breaks down problems 
+                        with <a href="#">zen</a>-like focus
                     </p>
                 </div>
             </div>
         </div>
-        <div>
-            <p>Dojonary is defined by <span>YOU</span></p>
-            <button>Add Definition</button>
+        <div id="right_block" class="block">
+            <h2>Dojonary is defined by <span class="bolder">YOU</span></h2>
+            <button id="new_def">Add Definition</button>
         </div>
         <!-- For JavaScript usually on the bottom
         Using a script
