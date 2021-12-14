@@ -1,7 +1,126 @@
-/* Reseting everything the browsers automatically do */
 * {
     outline: 0;
     padding: 0;
     margin: 0;
     border: 0;
+    /* border: dashed 1px rgb(0,0,0); */
+    font-family: sans-serif;
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button {
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    border: solid 2px rgb(0,0,0); 
+    box-shadow: 4px 4px 4px rgb(0,0,0);
+}
+
+h1 {
+    display: block;
+}
+
+h2 {
+    display: block;
+    /* font-weight: lighter; */
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+h3 {
+    display: block;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+header {
+    background-color: rgb(202, 190, 190);
+    padding: 10px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+input {
+    display: inline-flex; 
+    border: solid 2px rgb(0,0,0);
+    width: 300px;
+    margin-right: 50px;
+}
+
+p {
+    padding: 20px 20px 20px 20px;
+    /* padding-left: ;
+    padding-top: ;
+    padding-bottom: ;
+    padding-right: ; */
+    vertical-align: top;
+}
+
+header h1 {
+    display: inline-flex;
+    margin-right: 50px;
+}
+
+#left_block {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+}
+
+#right_block {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    padding-left: 15px;
+}
+
+#new_def {
+    background-color: rgb(23, 218, 17); 
+}
+
+#user_status {
+    display: inline-flex; 
+    color: rgb(255, 255, 255); 
+    background-color: rgb(27, 91, 209); 
+}
+
+.block {
+    display: inline-flex;
+    border: solid 2px rgb(0,0,0);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 2%;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.em {
+    font-style: italic;
+}
+
+.likes {
+    display: inline-block;
+    background-color: rgb(245, 202, 11);
+}
+
+.info {
+    display: inline-block;
+    width: 250px;
+}
+
+.word_data {
+    display: inline-block;
+    /* padding: 2%; */
+    text-align: center;
+    justify-content: space-between;
 }
