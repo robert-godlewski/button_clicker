@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dojonary</title>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     </head>
@@ -10,7 +11,7 @@
         <header>
             <h1>Dojonary</h1>
             <input type="search" name="Search">
-            <button id="user_status">Login</button>
+            <button id="user_status" onclick="changeStatus(this)">Login</button>
         </header>
         <div id="left_block">
             <div class="block">
@@ -18,7 +19,10 @@
                     <h1>ninja</h1>
                     <h3>noun</h3>
                     <p>Plural: <span class="em">ninjas</span></p>
-                    <button class="likes"><span>0</span> likes</button>
+                    <button class="likes" 
+                    onclick="updateLikes('#like1'); alert('Ninja was liked')">
+                        <span id="like1">0</span> likes
+                    </button>
                 </div>
                 <div class="info">
                     <p>
@@ -32,7 +36,10 @@
                     <h1>ninja</h1>
                     <h3>noun</h3>
                     <p>Plural: <span class="em">ninjas</span></p>
-                    <button class="likes"><span>0</span> likes</button>
+                    <button class="likes" 
+                    onclick="updateLikes('#like2'); alert('Ninja was liked')">
+                        <span id="like2">0</span> likes
+                    </button>
                 </div>
                 <div class="info">
                     <p>
@@ -44,15 +51,8 @@
         </div>
         <div id="right_block" class="block">
             <h2>Dojonary is defined by <span class="bolder">YOU</span></h2>
-            <button id="new_def">Add Definition</button>
+            <button id="new_def" onclick="hide(this)">Add Definition</button>
         </div>
-        <!-- For JavaScript usually on the bottom
-        Using a script
         <script src="js/script.js"></script>
-        Natively in the html-->
-        <script>
-            //Testing JavaScript natively
-            console.log("Hello World");
-        </script>
     </body>
 </html>
